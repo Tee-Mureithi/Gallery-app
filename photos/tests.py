@@ -61,9 +61,7 @@ class ImageTestClass(TestCase):
         self.new_image= Image(image='image.jpeg',name = 'Test Image',description = 'This is a random test Image description',category = self.new_category,location=self.new_location)
         self.new_image.save()
 
-        # self.new_image.category.add(self.new_category)
-        # self.new_image.category.add(self.new_location)
-
+     
 
     def tearDown(self):
         Category.objects.all().delete()
