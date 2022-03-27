@@ -5,7 +5,7 @@ h2 {
     font-family: 'Special Elite', cursive;
     }
     .boded{
-    background-image:url(/static/images/bg.jpeg);
+    background-image:url(/static/images/landingpage.jpg);
     padding-top:2%;
     background-repeat:no-repeat;
     background-position:center;
@@ -31,7 +31,7 @@ h2 {
     }
     body{
      scroll-behavior: smooth;
-    background-image:url(/static/images/g.jpg);
+    background-image:url(/static/images/landingpage.jpg);
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-position:center;
