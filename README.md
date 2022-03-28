@@ -18,9 +18,11 @@ Estar Mureithi (https://github.com/Tee-Mureithi)
 
 ## Setup and Installation
 
+To access the project ....
 
 #### Cloning the repository
 
+https://github.com/Tee-Mureithi/Gallery-app
 
 #### Navigate into the folder and install requirments
 
