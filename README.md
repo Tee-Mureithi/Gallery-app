@@ -47,7 +47,10 @@ Migrate using python manage.py migrate
 
 python manage.py server
 
+##  Technology used
 
+python3.8
+django 
 
 
 ## Known Bugs
@@ -56,8 +59,12 @@ Thre are no known bugs
 
 ## Contact Information
 
+If you have any contributions contact estar.mureithi@gmail.com
 
 ## Lincense
 
+* [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)]
+
+* Copyright (c) 2022 Estar Mureithi
 
 
