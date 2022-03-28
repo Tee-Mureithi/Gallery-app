@@ -5,19 +5,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 from .import views
 
-# urlpatterns = [
-#     path('',views.index, index,name='index'),
-#     path(''), views.search_results,name='search'),
-#     path('location/(?P<location>\w+)/', views.image_location, name='location'),
-
-# ]
-
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('search/', views.search_results, name='search'),
-    path('location/(?P<location>\w+)/', views.image_location, name='location'),
-
+  
+   path('location/<str:location>/',views.image_location,name='location'),
 ]
 
 if settings.DEBUG:
