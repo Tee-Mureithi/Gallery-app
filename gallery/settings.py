@@ -33,7 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = 'django-insecure-0*d(d+xcza4h5ncq-)f6$gn#+g!o3vxr_umnsy4a=py(5m+%=s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = False
 
 ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1','gallery10107.herokuapp.com']
 DISABLE_COLLECTSTATIC=1
@@ -101,7 +101,7 @@ WSGI_APPLICATION = 'gallery.wsgi.application'
 
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = os.environ.get('DEBUG', True)
 # development
 if config('MODE')=="dev":
    DATABASES = {
