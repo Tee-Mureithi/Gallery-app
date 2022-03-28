@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 import dj_database_url 
+from decouple import config,Csv
+
+
 
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
@@ -30,6 +33,7 @@ SECRET_KEY = 'django-insecure-0*d(d+xcza4h5ncq-)f6$gn#+g!o3vxr_umnsy4a=py(5m+%=s
 DEBUG = True
 
 ALLOWED_HOSTS = ['gallery10107.herokuapp.com']
+DISABLE_COLLECTSTATIC=1
 
 
 # Application definition
@@ -94,6 +98,8 @@ DATABASES = {
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
+
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Password validation
