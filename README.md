@@ -37,26 +37,22 @@ set up a virtual environment using pipenv shell
 
 ##### Setup Database
 
-
-
-
-
+Create a database using psql
+Create a superuser , email and password
+Make  migrations using python manage.py makemigrations
+Migrate using python manage.py migrate
 
 
 #### Run the Application
 
-
-
-
-
-## Technology used
+python manage.py server
 
 
 
 
 ## Known Bugs
 
-
+Thre are no known bugs
 
 ## Contact Information
 
