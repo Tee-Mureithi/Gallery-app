@@ -26,11 +26,13 @@ https://github.com/Tee-Mureithi/Gallery-app
 
 #### Navigate into the folder and install requirments
 
+Use the command pip install requirements.txt
 
 #### Install and activate the Virtual Environment
 
+set up a virtual environment using pipenv shell
 
-#### Install the dependancies
+
 
 
 ##### Setup Database
