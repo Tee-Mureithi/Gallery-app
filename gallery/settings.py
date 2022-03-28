@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0*d(d+xcza4h5ncq-)f6$gn#+g!o3vxr_umnsy4a=py(5m+%=s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gallery10107.herokuapp.com']
 
 
 # Application definition
@@ -144,3 +144,8 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+import dj_database_url 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
